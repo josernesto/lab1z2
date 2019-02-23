@@ -18,7 +18,7 @@ namespace WCFaritmetica
     }
 
      [DataContract]
-     public class clsSuma
+     public class clsSuma:baseResultado 
     {
         [DataMember]
         public int numeroA { get; set; }
@@ -28,6 +28,9 @@ namespace WCFaritmetica
         public int resultado { get; set; }
     }
 
-
-    
+    public class baseResultado
+    {
+        public string mensaje { get; set; }
+        public string error { get; set; }
+    }
 }

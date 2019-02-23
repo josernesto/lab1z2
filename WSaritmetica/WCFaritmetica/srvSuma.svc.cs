@@ -17,6 +17,10 @@ namespace WCFaritmetica
             obj.numeroA = numero1;
             obj.numerob = numero2;
             obj.resultado = obj.numeroA + obj.numerob;
+            obj.mensaje = "Suma satisfactoria";
+            if (obj.resultado < 0)
+                obj.error = "resultado negativo";
+
 
 
             return obj;
